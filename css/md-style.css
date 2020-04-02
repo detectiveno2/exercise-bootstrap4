@@ -1,3 +1,33 @@
 @media (min-width: 768px) {
   /* ========== Header ========== */
+
+  .navbar {
+    display: flex;
+    padding: 0px 31px 0px 46px;
+    align-items: center;
+  }
+
+  .navbar .navbar-collapse {
+    margin-left: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    padding: 4px 0px;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: #969699;
+  }
+
+  .navbar-nav .nav-item:last-child svg {
+    margin: 0px;
+  }
+
+  .nav-right .nav-item {
+    padding: 1px 8px;
+  }
+
+  .nav-right .nav-item:first-child .nav-link {
+    padding: 11px 8px;
+  }
 }
