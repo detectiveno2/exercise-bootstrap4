@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+  .navbar-nav li {
+    padding: 0px;
+  }
+
+  .navbar-nav li a {
+    color: #969699;
+  }
+}
