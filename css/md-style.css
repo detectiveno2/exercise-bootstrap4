@@ -19,6 +19,10 @@
     color: #969699;
   }
 
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff;
+  }
+
   .navbar-nav .nav-item:last-child svg {
     margin: 0px;
   }
@@ -29,5 +33,9 @@
 
   .nav-right .nav-item:first-child .nav-link {
     padding: 11px 8px;
+  }
+
+  .nav-right .nav-item:last-child:hover {
+    background-color: #005ba4;
   }
 }
