@@ -1,0 +1,37 @@
+@media (min-width: 1200px) {
+  /* ========== Header ========== */
+
+  .nav-right .nav-item input {
+    padding: 15.5px 0px 15.5px 36px;
+    border: 0px;
+    background-color: #3d3d42;
+    color: #ffffff;
+    font-size: 0.8rem;
+  }
+
+  .nav-right .nav-item input::placeholder {
+    font-size: 0.8rem;
+    color: #d8d8d9;
+  }
+
+  .nav-right .nav-item input:focus {
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+    outline-offset: -1px;
+    box-shadow: none;
+    background-color: #525257;
+  }
+
+  .input-group .btn {
+    border: 0px;
+    padding: 13px 0px 10px 0px;
+    color: #d8d8d9;
+    position: relative;
+    top: 3px;
+    left: 28px;
+    height: 44px;
+  }
+
+  .nav-right .nav-item:first-child + .nav-item {
+    padding: 0px;
+  }
+}

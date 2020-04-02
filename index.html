@@ -19,12 +19,17 @@
     <!-- CSS link -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/md-style.css" />
+    <link rel="stylesheet" href="./css/lg-style.css" />
+    <link rel="stylesheet" href="./css/xl-style.css" />
 
     <title>Exercise Bootstrap 4</title>
   </head>
   <body>
     <div class="header">
-      <nav class="navbar navbar-expand-md align-items-center">
+      <nav
+        class="navbar navbar-expand-md align-items-center"
+        id="navbar-header"
+      >
         <!-- Brand -->
         <a href="#" class="navbar-brand d-flex m-md-0">
           <img src="./image/favicon.ico" width="30" height="30" />
@@ -45,7 +50,7 @@
 
         <!-- Nav links -->
         <div
-          class="collapse navbar-collapse justify-content-md-between"
+          class="collapse navbar-collapse justify-content-md-between align-items-stretch"
           id="collapsibleNavbar"
         >
           <ul class="navbar-nav nav-left">
@@ -91,7 +96,7 @@
             </li>
           </ul>
           <ul class="navbar-nav nav-right d-none d-md-flex">
-            <li class="nav-item">
+            <li class="nav-item d-xl-none">
               <a href="#" class="nav-link">
                 <svg
                   id="i-search"
@@ -109,6 +114,34 @@
                   <path d="M23 23 L30 30" />
                 </svg>
               </a>
+            </li>
+            <li class="nav-item d-none d-xl-block">
+              <form class="form-inline">
+                <div class="input-group">
+                  <span class="btn">
+                    <svg
+                      id="i-search"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      width="20"
+                      height="20"
+                      fill="none"
+                      stroke="currentcolor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="9.375%"
+                    >
+                      <circle cx="14" cy="14" r="12" />
+                      <path d="M23 23 L30 30" />
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    class="search-box"
+                    placeholder="Search Docs"
+                  />
+                </div>
+              </form>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -136,7 +169,7 @@
       </nav>
     </div>
 
-    <div style="height: 200vh; background-color: black;"></div>
+    <div style="height: 200vh; background-color: white;"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -155,5 +188,8 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Personal Script -->
+    <script src="./app.js"></script>
   </body>
 </html>
