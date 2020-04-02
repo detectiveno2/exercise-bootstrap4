@@ -7,6 +7,8 @@
   font-size: 10px;
 } */
 
+/* ========== Header ========== */
+
 .header {
   position: fixed;
   top: 0px;
@@ -49,21 +51,21 @@
   background-color: #4a4682;
 }
 
-.navbar-nav li {
+.navbar-nav .nav-item {
   padding-left: 16px;
 }
 
-.navbar-nav li:last-child {
+.navbar-nav .nav-item:last-child {
   background-color: #0066b8;
   display: flex;
   align-items: center;
 }
 
-.navbar-nav li:last-child svg {
+.navbar-nav .nav-item:last-child svg {
   color: #ffffff;
   margin-right: 5px;
 }
 
-.navbar-nav li a {
+.navbar-nav .nav-item .nav-link {
   color: #ffffff;
 }

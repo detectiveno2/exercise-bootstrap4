@@ -17,16 +17,16 @@
     />
 
     <!-- CSS link -->
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./md-style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/sm-style.css" />
 
     <title>Exercise Bootstrap 4</title>
   </head>
   <body>
     <div class="header">
-      <nav class="navbar navbar-expand-sm">
+      <nav class="navbar navbar-expand-sm align-items-center">
         <!-- Brand -->
-        <a href="#" class="navbar-brand d-flex">
+        <a href="#" class="navbar-brand d-flex m-sm-0">
           <img src="./image/favicon.ico" width="30" height="30" />
           <span>Visual Studio Code</span>
         </a>
@@ -44,7 +44,10 @@
         </button>
 
         <!-- Nav links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div
+          class="collapse navbar-collapse justify-content-sm-between"
+          id="collapsibleNavbar"
+        >
           <ul class="navbar-nav nav-left">
             <li class="nav-item">
               <a href="#" class="nav-link">Docs</a>
@@ -64,10 +67,10 @@
             <li class="nav-item">
               <a href="#" class="nav-link">FAQ</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-sm-none">
               <a href="#" class="nav-link">Search</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-sm-none">
               <svg
                 id="i-import"
                 xmlns="http://www.w3.org/2000/svg"
@@ -85,6 +88,47 @@
                 />
               </svg>
               <a href="#" class="nav-link">Download</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav nav-right d-none d-sm-flex">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg
+                  id="i-search"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentcolor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="9.375%"
+                >
+                  <circle cx="14" cy="14" r="12" />
+                  <path d="M23 23 L30 30" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg
+                  id="i-import"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentcolor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M28 22 L28 30 4 30 4 22 M16 4 L16 24 M8 16 L16 24 24 16"
+                  />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
